@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-bcrypt-nodejs/bcrypt-nodejs/bCrypt.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-bcrypt-nodejs/node_modules/bcrypt-nodejs/bCrypt.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-bcrypt-nodejs">npmtest-bcrypt-nodejs (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-bcrypt-nodejs/bcrypt-nodejs/bCrypt.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-bcrypt-nodejs/node_modules/bcrypt-nodejs/bCrypt.js</span></h1>
     <h2>
         
         Statements: <span class="metric">10.94% <small>(35 / 320)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-bcrypt-nodejs/bcrypt-nodejs/</a> » bCrypt.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-bcrypt-nodejs/node_modules/bcrypt-nodejs/</a> &#187; bCrypt.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -1862,349 +1864,349 @@ var index_64 = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 		32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48,
 		49, 50, 51, 52, 53, -1, -1, -1, -1, -1];
 &nbsp;
-<span class="fstat-no" title="function not covered">function getByte(c) {</span>
-<span class="cstat-no" title="statement not covered">	var ret = 0;</span>
-<span class="cstat-no" title="statement not covered">	try {</span>
-<span class="cstat-no" title="statement not covered">		var b = c.charCodeAt(0);</span>
+<span class="fstat-no" title="function not covered" >function getByte(c) {</span>
+<span class="cstat-no" title="statement not covered" >	var ret = 0;</span>
+<span class="cstat-no" title="statement not covered" >	try {</span>
+<span class="cstat-no" title="statement not covered" >		var b = c.charCodeAt(0);</span>
 	} catch (err) {
-<span class="cstat-no" title="statement not covered">		b = c;</span>
+<span class="cstat-no" title="statement not covered" >		b = c;</span>
 	}
-<span class="cstat-no" title="statement not covered">	if (b &gt; 127) {</span>
-<span class="cstat-no" title="statement not covered">		return -128 + (b % 128);</span>
+<span class="cstat-no" title="statement not covered" >	if (b &gt; 127) {</span>
+<span class="cstat-no" title="statement not covered" >		return -128 + (b % 128);</span>
 	} else {
-<span class="cstat-no" title="statement not covered">		return b;</span>
+<span class="cstat-no" title="statement not covered" >		return b;</span>
 	}
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function encode_base64(d, len) {</span>
-<span class="cstat-no" title="statement not covered">	var off = 0;</span>
-<span class="cstat-no" title="statement not covered">	var rs = [];</span>
-<span class="cstat-no" title="statement not covered">	var c1;</span>
-<span class="cstat-no" title="statement not covered">	var c2;</span>
-<span class="cstat-no" title="statement not covered">	if (len &lt;= 0 || len &gt; d.length)</span>
-<span class="cstat-no" title="statement not covered">		throw "Invalid len";</span>
-<span class="cstat-no" title="statement not covered">	while (off &lt; len) {</span>
-<span class="cstat-no" title="statement not covered">		c1 = d[off++] &amp; 0xff;</span>
-<span class="cstat-no" title="statement not covered">		rs.push(base64_code[(c1 &gt;&gt; 2) &amp; 0x3f]);</span>
-<span class="cstat-no" title="statement not covered">		c1 = (c1 &amp; 0x03) &lt;&lt; 4;</span>
-<span class="cstat-no" title="statement not covered">		if (off &gt;= len) {</span>
-<span class="cstat-no" title="statement not covered">			rs.push(base64_code[c1 &amp; 0x3f]);</span>
-<span class="cstat-no" title="statement not covered">			break;</span>
+<span class="fstat-no" title="function not covered" >function encode_base64(d, len) {</span>
+<span class="cstat-no" title="statement not covered" >	var off = 0;</span>
+<span class="cstat-no" title="statement not covered" >	var rs = [];</span>
+<span class="cstat-no" title="statement not covered" >	var c1;</span>
+<span class="cstat-no" title="statement not covered" >	var c2;</span>
+<span class="cstat-no" title="statement not covered" >	if (len &lt;= 0 || len &gt; d.length)</span>
+<span class="cstat-no" title="statement not covered" >		throw "Invalid len";</span>
+<span class="cstat-no" title="statement not covered" >	while (off &lt; len) {</span>
+<span class="cstat-no" title="statement not covered" >		c1 = d[off++] &amp; 0xff;</span>
+<span class="cstat-no" title="statement not covered" >		rs.push(base64_code[(c1 &gt;&gt; 2) &amp; 0x3f]);</span>
+<span class="cstat-no" title="statement not covered" >		c1 = (c1 &amp; 0x03) &lt;&lt; 4;</span>
+<span class="cstat-no" title="statement not covered" >		if (off &gt;= len) {</span>
+<span class="cstat-no" title="statement not covered" >			rs.push(base64_code[c1 &amp; 0x3f]);</span>
+<span class="cstat-no" title="statement not covered" >			break;</span>
 		}
-<span class="cstat-no" title="statement not covered">		c2 = d[off++] &amp; 0xff;</span>
-<span class="cstat-no" title="statement not covered">		c1 |= (c2 &gt;&gt; 4) &amp; 0x0f;</span>
-<span class="cstat-no" title="statement not covered">		rs.push(base64_code[c1 &amp; 0x3f]);</span>
-<span class="cstat-no" title="statement not covered">		c1 = (c2 &amp; 0x0f) &lt;&lt; 2;</span>
-<span class="cstat-no" title="statement not covered">		if (off &gt;= len) {</span>
-<span class="cstat-no" title="statement not covered">			rs.push(base64_code[c1 &amp; 0x3f]);</span>
-<span class="cstat-no" title="statement not covered">			break;</span>
+<span class="cstat-no" title="statement not covered" >		c2 = d[off++] &amp; 0xff;</span>
+<span class="cstat-no" title="statement not covered" >		c1 |= (c2 &gt;&gt; 4) &amp; 0x0f;</span>
+<span class="cstat-no" title="statement not covered" >		rs.push(base64_code[c1 &amp; 0x3f]);</span>
+<span class="cstat-no" title="statement not covered" >		c1 = (c2 &amp; 0x0f) &lt;&lt; 2;</span>
+<span class="cstat-no" title="statement not covered" >		if (off &gt;= len) {</span>
+<span class="cstat-no" title="statement not covered" >			rs.push(base64_code[c1 &amp; 0x3f]);</span>
+<span class="cstat-no" title="statement not covered" >			break;</span>
 		}
-<span class="cstat-no" title="statement not covered">		c2 = d[off++] &amp; 0xff;</span>
-<span class="cstat-no" title="statement not covered">		c1 |= (c2 &gt;&gt; 6) &amp; 0x03;</span>
-<span class="cstat-no" title="statement not covered">		rs.push(base64_code[c1 &amp; 0x3f]);</span>
-<span class="cstat-no" title="statement not covered">		rs.push(base64_code[c2 &amp; 0x3f]);</span>
+<span class="cstat-no" title="statement not covered" >		c2 = d[off++] &amp; 0xff;</span>
+<span class="cstat-no" title="statement not covered" >		c1 |= (c2 &gt;&gt; 6) &amp; 0x03;</span>
+<span class="cstat-no" title="statement not covered" >		rs.push(base64_code[c1 &amp; 0x3f]);</span>
+<span class="cstat-no" title="statement not covered" >		rs.push(base64_code[c2 &amp; 0x3f]);</span>
 	}
-<span class="cstat-no" title="statement not covered">	return rs.join('');</span>
+<span class="cstat-no" title="statement not covered" >	return rs.join('');</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function char64(x) {</span>
-<span class="cstat-no" title="statement not covered">	var code = x.charCodeAt(0);</span>
-<span class="cstat-no" title="statement not covered">	if (code &lt; 0 || code &gt; index_64.length) {</span>
-<span class="cstat-no" title="statement not covered">		return -1;</span>
+<span class="fstat-no" title="function not covered" >function char64(x) {</span>
+<span class="cstat-no" title="statement not covered" >	var code = x.charCodeAt(0);</span>
+<span class="cstat-no" title="statement not covered" >	if (code &lt; 0 || code &gt; index_64.length) {</span>
+<span class="cstat-no" title="statement not covered" >		return -1;</span>
 	}
-<span class="cstat-no" title="statement not covered">	return index_64[code];</span>
+<span class="cstat-no" title="statement not covered" >	return index_64[code];</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function decode_base64(s, maxolen) {</span>
-<span class="cstat-no" title="statement not covered">	var off = 0;</span>
-<span class="cstat-no" title="statement not covered">	var slen = s.length;</span>
-<span class="cstat-no" title="statement not covered">	var olen = 0;</span>
-<span class="cstat-no" title="statement not covered">	var rs = [];</span>
-<span class="cstat-no" title="statement not covered">	var c1, c2, c3, c4, o;</span>
-<span class="cstat-no" title="statement not covered">	if (maxolen &lt;= 0) <span class="cstat-no" title="statement not covered">throw "Invalid maxolen";</span></span>
-<span class="cstat-no" title="statement not covered">	while (off &lt; slen - 1 &amp;&amp; olen &lt; maxolen) {</span>
-<span class="cstat-no" title="statement not covered">		c1 = char64(s.charAt(off++));</span>
-<span class="cstat-no" title="statement not covered">		c2 = char64(s.charAt(off++));</span>
-<span class="cstat-no" title="statement not covered">		if (c1 == -1 || c2 == -1) {</span>
-<span class="cstat-no" title="statement not covered">			break;</span>
+<span class="fstat-no" title="function not covered" >function decode_base64(s, maxolen) {</span>
+<span class="cstat-no" title="statement not covered" >	var off = 0;</span>
+<span class="cstat-no" title="statement not covered" >	var slen = s.length;</span>
+<span class="cstat-no" title="statement not covered" >	var olen = 0;</span>
+<span class="cstat-no" title="statement not covered" >	var rs = [];</span>
+<span class="cstat-no" title="statement not covered" >	var c1, c2, c3, c4, o;</span>
+<span class="cstat-no" title="statement not covered" >	if (maxolen &lt;= 0) <span class="cstat-no" title="statement not covered" >throw "Invalid maxolen";</span></span>
+<span class="cstat-no" title="statement not covered" >	while (off &lt; slen - 1 &amp;&amp; olen &lt; maxolen) {</span>
+<span class="cstat-no" title="statement not covered" >		c1 = char64(s.charAt(off++));</span>
+<span class="cstat-no" title="statement not covered" >		c2 = char64(s.charAt(off++));</span>
+<span class="cstat-no" title="statement not covered" >		if (c1 == -1 || c2 == -1) {</span>
+<span class="cstat-no" title="statement not covered" >			break;</span>
 		}
-<span class="cstat-no" title="statement not covered">		o = getByte(c1 &lt;&lt; 2);</span>
-<span class="cstat-no" title="statement not covered">		o |= (c2 &amp; 0x30) &gt;&gt; 4;</span>
-<span class="cstat-no" title="statement not covered">		rs.push(String.fromCharCode(o));</span>
-<span class="cstat-no" title="statement not covered">		if (++olen &gt;= maxolen || off &gt;= slen) {</span>
-<span class="cstat-no" title="statement not covered">			break;</span>
+<span class="cstat-no" title="statement not covered" >		o = getByte(c1 &lt;&lt; 2);</span>
+<span class="cstat-no" title="statement not covered" >		o |= (c2 &amp; 0x30) &gt;&gt; 4;</span>
+<span class="cstat-no" title="statement not covered" >		rs.push(String.fromCharCode(o));</span>
+<span class="cstat-no" title="statement not covered" >		if (++olen &gt;= maxolen || off &gt;= slen) {</span>
+<span class="cstat-no" title="statement not covered" >			break;</span>
 		}
-<span class="cstat-no" title="statement not covered">		c3 = char64(s.charAt(off++));</span>
-<span class="cstat-no" title="statement not covered">		if (c3 == -1) {</span>
-<span class="cstat-no" title="statement not covered">			break;</span>
+<span class="cstat-no" title="statement not covered" >		c3 = char64(s.charAt(off++));</span>
+<span class="cstat-no" title="statement not covered" >		if (c3 == -1) {</span>
+<span class="cstat-no" title="statement not covered" >			break;</span>
 		}
-<span class="cstat-no" title="statement not covered">		o = getByte((c2 &amp; 0x0f) &lt;&lt; 4);</span>
-<span class="cstat-no" title="statement not covered">		o |= (c3 &amp; 0x3c) &gt;&gt; 2;</span>
-<span class="cstat-no" title="statement not covered">		rs.push(String.fromCharCode(o));</span>
-<span class="cstat-no" title="statement not covered">		if (++olen &gt;= maxolen || off &gt;= slen) {</span>
-<span class="cstat-no" title="statement not covered">			break;</span>
+<span class="cstat-no" title="statement not covered" >		o = getByte((c2 &amp; 0x0f) &lt;&lt; 4);</span>
+<span class="cstat-no" title="statement not covered" >		o |= (c3 &amp; 0x3c) &gt;&gt; 2;</span>
+<span class="cstat-no" title="statement not covered" >		rs.push(String.fromCharCode(o));</span>
+<span class="cstat-no" title="statement not covered" >		if (++olen &gt;= maxolen || off &gt;= slen) {</span>
+<span class="cstat-no" title="statement not covered" >			break;</span>
 		}
-<span class="cstat-no" title="statement not covered">		c4 = char64(s.charAt(off++));</span>
-<span class="cstat-no" title="statement not covered">		o = getByte((c3 &amp; 0x03) &lt;&lt; 6);</span>
-<span class="cstat-no" title="statement not covered">		o |= c4;</span>
-<span class="cstat-no" title="statement not covered">		rs.push(String.fromCharCode(o));</span>
-<span class="cstat-no" title="statement not covered">		++olen;</span>
+<span class="cstat-no" title="statement not covered" >		c4 = char64(s.charAt(off++));</span>
+<span class="cstat-no" title="statement not covered" >		o = getByte((c3 &amp; 0x03) &lt;&lt; 6);</span>
+<span class="cstat-no" title="statement not covered" >		o |= c4;</span>
+<span class="cstat-no" title="statement not covered" >		rs.push(String.fromCharCode(o));</span>
+<span class="cstat-no" title="statement not covered" >		++olen;</span>
 	}
-<span class="cstat-no" title="statement not covered">	var ret = [];</span>
-<span class="cstat-no" title="statement not covered">	for (off = 0; off &lt; olen; off++) {</span>
-<span class="cstat-no" title="statement not covered">		ret.push(getByte(rs[off]));</span>
+<span class="cstat-no" title="statement not covered" >	var ret = [];</span>
+<span class="cstat-no" title="statement not covered" >	for (off = 0; off &lt; olen; off++) {</span>
+<span class="cstat-no" title="statement not covered" >		ret.push(getByte(rs[off]));</span>
 	}
-<span class="cstat-no" title="statement not covered">	return ret;</span>
+<span class="cstat-no" title="statement not covered" >	return ret;</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function encipher(lr, off, P, S) {</span>
-<span class="cstat-no" title="statement not covered">	var i;</span>
-<span class="cstat-no" title="statement not covered">	var n;</span>
-<span class="cstat-no" title="statement not covered">	var l = lr[off];</span>
-<span class="cstat-no" title="statement not covered">	var r = lr[off + 1];</span>
+<span class="fstat-no" title="function not covered" >function encipher(lr, off, P, S) {</span>
+<span class="cstat-no" title="statement not covered" >	var i;</span>
+<span class="cstat-no" title="statement not covered" >	var n;</span>
+<span class="cstat-no" title="statement not covered" >	var l = lr[off];</span>
+<span class="cstat-no" title="statement not covered" >	var r = lr[off + 1];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	l ^= P[0];</span>
-<span class="cstat-no" title="statement not covered">	for (i = 0; i &lt;= BLOWFISH_NUM_ROUNDS - 2;) {</span>
+<span class="cstat-no" title="statement not covered" >	l ^= P[0];</span>
+<span class="cstat-no" title="statement not covered" >	for (i = 0; i &lt;= BLOWFISH_NUM_ROUNDS - 2;) {</span>
 		// Feistel substitution on left word
-<span class="cstat-no" title="statement not covered">		n = S[(l &gt;&gt; 24) &amp; 0xff];</span>
-<span class="cstat-no" title="statement not covered">		n += S[0x100 | ((l &gt;&gt; 16) &amp; 0xff)];</span>
-<span class="cstat-no" title="statement not covered">		n ^= S[0x200 | ((l &gt;&gt; 8) &amp; 0xff)];</span>
-<span class="cstat-no" title="statement not covered">		n += S[0x300 | (l &amp; 0xff)];</span>
-<span class="cstat-no" title="statement not covered">		r ^= n ^ P[++i];</span>
+<span class="cstat-no" title="statement not covered" >		n = S[(l &gt;&gt; 24) &amp; 0xff];</span>
+<span class="cstat-no" title="statement not covered" >		n += S[0x100 | ((l &gt;&gt; 16) &amp; 0xff)];</span>
+<span class="cstat-no" title="statement not covered" >		n ^= S[0x200 | ((l &gt;&gt; 8) &amp; 0xff)];</span>
+<span class="cstat-no" title="statement not covered" >		n += S[0x300 | (l &amp; 0xff)];</span>
+<span class="cstat-no" title="statement not covered" >		r ^= n ^ P[++i];</span>
 &nbsp;
 		// Feistel substitution on right word
-<span class="cstat-no" title="statement not covered">		n = S[(r &gt;&gt; 24) &amp; 0xff];</span>
-<span class="cstat-no" title="statement not covered">		n += S[0x100 | ((r &gt;&gt; 16) &amp; 0xff)];</span>
-<span class="cstat-no" title="statement not covered">		n ^= S[0x200 | ((r &gt;&gt; 8) &amp; 0xff)];</span>
-<span class="cstat-no" title="statement not covered">		n += S[0x300 | (r &amp; 0xff)];</span>
-<span class="cstat-no" title="statement not covered">		l ^= n ^ P[++i];</span>
+<span class="cstat-no" title="statement not covered" >		n = S[(r &gt;&gt; 24) &amp; 0xff];</span>
+<span class="cstat-no" title="statement not covered" >		n += S[0x100 | ((r &gt;&gt; 16) &amp; 0xff)];</span>
+<span class="cstat-no" title="statement not covered" >		n ^= S[0x200 | ((r &gt;&gt; 8) &amp; 0xff)];</span>
+<span class="cstat-no" title="statement not covered" >		n += S[0x300 | (r &amp; 0xff)];</span>
+<span class="cstat-no" title="statement not covered" >		l ^= n ^ P[++i];</span>
 	}
-<span class="cstat-no" title="statement not covered">	lr[off] = r ^ P[BLOWFISH_NUM_ROUNDS + 1];</span>
-<span class="cstat-no" title="statement not covered">	lr[off + 1] = l;</span>
-<span class="cstat-no" title="statement not covered">	return lr;</span>
+<span class="cstat-no" title="statement not covered" >	lr[off] = r ^ P[BLOWFISH_NUM_ROUNDS + 1];</span>
+<span class="cstat-no" title="statement not covered" >	lr[off + 1] = l;</span>
+<span class="cstat-no" title="statement not covered" >	return lr;</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function streamtoword(data, offp) {</span>
-<span class="cstat-no" title="statement not covered">	var i;</span>
-<span class="cstat-no" title="statement not covered">	var word = 0;</span>
-<span class="cstat-no" title="statement not covered">	for (i = 0; i &lt; 4; i++) {</span>
-<span class="cstat-no" title="statement not covered">		word = (word &lt;&lt; 8) | (data[offp] &amp; 0xff);</span>
-<span class="cstat-no" title="statement not covered">		offp = (offp + 1) % data.length;</span>
+<span class="fstat-no" title="function not covered" >function streamtoword(data, offp) {</span>
+<span class="cstat-no" title="statement not covered" >	var i;</span>
+<span class="cstat-no" title="statement not covered" >	var word = 0;</span>
+<span class="cstat-no" title="statement not covered" >	for (i = 0; i &lt; 4; i++) {</span>
+<span class="cstat-no" title="statement not covered" >		word = (word &lt;&lt; 8) | (data[offp] &amp; 0xff);</span>
+<span class="cstat-no" title="statement not covered" >		offp = (offp + 1) % data.length;</span>
 	}
-<span class="cstat-no" title="statement not covered">	return {key:word, offp:offp};</span>
+<span class="cstat-no" title="statement not covered" >	return {key:word, offp:offp};</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function key(key, P, S) {</span>
-<span class="cstat-no" title="statement not covered">	var i;</span>
-<span class="cstat-no" title="statement not covered">	var offp = 0;</span>
-<span class="cstat-no" title="statement not covered">	var lr = new Array(0x00000000, 0x00000000);</span>
-<span class="cstat-no" title="statement not covered">	var plen = P.length;</span>
-<span class="cstat-no" title="statement not covered">	var slen = S.length;</span>
+<span class="fstat-no" title="function not covered" >function key(key, P, S) {</span>
+<span class="cstat-no" title="statement not covered" >	var i;</span>
+<span class="cstat-no" title="statement not covered" >	var offp = 0;</span>
+<span class="cstat-no" title="statement not covered" >	var lr = new Array(0x00000000, 0x00000000);</span>
+<span class="cstat-no" title="statement not covered" >	var plen = P.length;</span>
+<span class="cstat-no" title="statement not covered" >	var slen = S.length;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	for (i = 0; i &lt; plen; i++) {</span>
-<span class="cstat-no" title="statement not covered">		var sw = streamtoword(key, offp);</span>
-<span class="cstat-no" title="statement not covered">		offp = sw.offp;</span>
-<span class="cstat-no" title="statement not covered">		P[i] = P[i] ^ sw.key;</span>
+<span class="cstat-no" title="statement not covered" >	for (i = 0; i &lt; plen; i++) {</span>
+<span class="cstat-no" title="statement not covered" >		var sw = streamtoword(key, offp);</span>
+<span class="cstat-no" title="statement not covered" >		offp = sw.offp;</span>
+<span class="cstat-no" title="statement not covered" >		P[i] = P[i] ^ sw.key;</span>
 	}
-<span class="cstat-no" title="statement not covered">	for (i = 0; i &lt; plen; i += 2) {</span>
-<span class="cstat-no" title="statement not covered">		lr = encipher(lr, 0, P, S);</span>
-<span class="cstat-no" title="statement not covered">		P[i] = lr[0];</span>
-<span class="cstat-no" title="statement not covered">		P[i + 1] = lr[1];</span>
+<span class="cstat-no" title="statement not covered" >	for (i = 0; i &lt; plen; i += 2) {</span>
+<span class="cstat-no" title="statement not covered" >		lr = encipher(lr, 0, P, S);</span>
+<span class="cstat-no" title="statement not covered" >		P[i] = lr[0];</span>
+<span class="cstat-no" title="statement not covered" >		P[i + 1] = lr[1];</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	for (i = 0; i &lt; slen; i += 2) {</span>
-<span class="cstat-no" title="statement not covered">		lr = encipher(lr, 0, P, S);</span>
-<span class="cstat-no" title="statement not covered">		S[i] = lr[0];</span>
-<span class="cstat-no" title="statement not covered">		S[i + 1] = lr[1];</span>
-	}
-};
-&nbsp;
-<span class="fstat-no" title="function not covered">function ekskey(data, key, P, S) {</span>
-<span class="cstat-no" title="statement not covered">	var i;</span>
-<span class="cstat-no" title="statement not covered">	var offp = 0;</span>
-<span class="cstat-no" title="statement not covered">	var lr = new Array(0x00000000, 0x00000000);</span>
-<span class="cstat-no" title="statement not covered">	var plen = P.length;</span>
-<span class="cstat-no" title="statement not covered">	var slen = S.length;</span>
-<span class="cstat-no" title="statement not covered">	var sw;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered">	for (i = 0; i &lt; plen; i++) {</span>
-<span class="cstat-no" title="statement not covered">		sw = streamtoword(key, offp);</span>
-<span class="cstat-no" title="statement not covered">		offp = sw.offp;</span>
-<span class="cstat-no" title="statement not covered">		P[i] = P[i] ^ sw.key;</span>
-	}
-<span class="cstat-no" title="statement not covered">	offp = 0;</span>
-<span class="cstat-no" title="statement not covered">	for (i = 0; i &lt; plen; i += 2) {</span>
-<span class="cstat-no" title="statement not covered">		sw = streamtoword(data, offp);</span>
-<span class="cstat-no" title="statement not covered">		offp = sw.offp;</span>
-<span class="cstat-no" title="statement not covered">		lr[0] ^= sw.key;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered">		sw = streamtoword(data, offp);</span>
-<span class="cstat-no" title="statement not covered">		offp = sw.offp;</span>
-<span class="cstat-no" title="statement not covered">		lr[1] ^= sw.key;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered">		lr = encipher(lr, 0, P, S);</span>
-<span class="cstat-no" title="statement not covered">		P[i] = lr[0];</span>
-<span class="cstat-no" title="statement not covered">		P[i + 1] = lr[1];</span>
-	}
-<span class="cstat-no" title="statement not covered">	for (i = 0; i &lt; slen; i += 2) {</span>
-<span class="cstat-no" title="statement not covered">		sw = streamtoword(data, offp);</span>
-<span class="cstat-no" title="statement not covered">		offp = sw.offp;</span>
-<span class="cstat-no" title="statement not covered">		lr[0] ^= sw.key;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered">		sw = streamtoword(data, offp);</span>
-<span class="cstat-no" title="statement not covered">		offp = sw.offp;</span>
-<span class="cstat-no" title="statement not covered">		lr[1] ^= sw.key;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered">		lr = encipher(lr, 0, P, S);</span>
-<span class="cstat-no" title="statement not covered">		S[i] = lr[0];</span>
-<span class="cstat-no" title="statement not covered">		S[i + 1] = lr[1];</span>
+<span class="cstat-no" title="statement not covered" >	for (i = 0; i &lt; slen; i += 2) {</span>
+<span class="cstat-no" title="statement not covered" >		lr = encipher(lr, 0, P, S);</span>
+<span class="cstat-no" title="statement not covered" >		S[i] = lr[0];</span>
+<span class="cstat-no" title="statement not covered" >		S[i + 1] = lr[1];</span>
 	}
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function crypt_raw(password, salt, log_rounds, progress) {</span>
-<span class="cstat-no" title="statement not covered">	var rounds;</span>
-<span class="cstat-no" title="statement not covered">	var j;</span>
-<span class="cstat-no" title="statement not covered">	var cdata = bf_crypt_ciphertext.slice();</span>
-<span class="cstat-no" title="statement not covered">	var clen = cdata.length;</span>
-<span class="cstat-no" title="statement not covered">	var one_percent;</span>
+<span class="fstat-no" title="function not covered" >function ekskey(data, key, P, S) {</span>
+<span class="cstat-no" title="statement not covered" >	var i;</span>
+<span class="cstat-no" title="statement not covered" >	var offp = 0;</span>
+<span class="cstat-no" title="statement not covered" >	var lr = new Array(0x00000000, 0x00000000);</span>
+<span class="cstat-no" title="statement not covered" >	var plen = P.length;</span>
+<span class="cstat-no" title="statement not covered" >	var slen = S.length;</span>
+<span class="cstat-no" title="statement not covered" >	var sw;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (log_rounds &lt; 4 || log_rounds &gt; 31)</span>
-<span class="cstat-no" title="statement not covered">		throw "Bad number of rounds";</span>
-<span class="cstat-no" title="statement not covered">	if (salt.length != BCRYPT_SALT_LEN)</span>
-<span class="cstat-no" title="statement not covered">		throw "Bad salt length";</span>
+<span class="cstat-no" title="statement not covered" >	for (i = 0; i &lt; plen; i++) {</span>
+<span class="cstat-no" title="statement not covered" >		sw = streamtoword(key, offp);</span>
+<span class="cstat-no" title="statement not covered" >		offp = sw.offp;</span>
+<span class="cstat-no" title="statement not covered" >		P[i] = P[i] ^ sw.key;</span>
+	}
+<span class="cstat-no" title="statement not covered" >	offp = 0;</span>
+<span class="cstat-no" title="statement not covered" >	for (i = 0; i &lt; plen; i += 2) {</span>
+<span class="cstat-no" title="statement not covered" >		sw = streamtoword(data, offp);</span>
+<span class="cstat-no" title="statement not covered" >		offp = sw.offp;</span>
+<span class="cstat-no" title="statement not covered" >		lr[0] ^= sw.key;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	rounds = 1 &lt;&lt; log_rounds;</span>
-<span class="cstat-no" title="statement not covered">	one_percent = Math.floor(rounds / 100) + 1;</span>
+<span class="cstat-no" title="statement not covered" >		sw = streamtoword(data, offp);</span>
+<span class="cstat-no" title="statement not covered" >		offp = sw.offp;</span>
+<span class="cstat-no" title="statement not covered" >		lr[1] ^= sw.key;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var P = P_orig.slice();</span>
-<span class="cstat-no" title="statement not covered">	var S = S_orig.slice();</span>
+<span class="cstat-no" title="statement not covered" >		lr = encipher(lr, 0, P, S);</span>
+<span class="cstat-no" title="statement not covered" >		P[i] = lr[0];</span>
+<span class="cstat-no" title="statement not covered" >		P[i + 1] = lr[1];</span>
+	}
+<span class="cstat-no" title="statement not covered" >	for (i = 0; i &lt; slen; i += 2) {</span>
+<span class="cstat-no" title="statement not covered" >		sw = streamtoword(data, offp);</span>
+<span class="cstat-no" title="statement not covered" >		offp = sw.offp;</span>
+<span class="cstat-no" title="statement not covered" >		lr[0] ^= sw.key;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	ekskey(salt, password, P, S);</span>
+<span class="cstat-no" title="statement not covered" >		sw = streamtoword(data, offp);</span>
+<span class="cstat-no" title="statement not covered" >		offp = sw.offp;</span>
+<span class="cstat-no" title="statement not covered" >		lr[1] ^= sw.key;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var i = 0;</span>
+<span class="cstat-no" title="statement not covered" >		lr = encipher(lr, 0, P, S);</span>
+<span class="cstat-no" title="statement not covered" >		S[i] = lr[0];</span>
+<span class="cstat-no" title="statement not covered" >		S[i + 1] = lr[1];</span>
+	}
+};
 &nbsp;
-<span class="cstat-no" title="statement not covered">	while(true) {</span>
-<span class="cstat-no" title="statement not covered">		if(i &lt; rounds){</span>
-<span class="cstat-no" title="statement not covered">			var start = new Date();</span>
-<span class="cstat-no" title="statement not covered">			for (; i &lt; rounds;) {</span>
-<span class="cstat-no" title="statement not covered">				i = i + 1;</span>
-<span class="cstat-no" title="statement not covered">				key(password, P, S);</span>
-<span class="cstat-no" title="statement not covered">				key(salt, P, S);</span>
-<span class="cstat-no" title="statement not covered">		                if(i % one_percent == 0){</span>
-<span class="cstat-no" title="statement not covered">			        	progress();</span>
+<span class="fstat-no" title="function not covered" >function crypt_raw(password, salt, log_rounds, progress) {</span>
+<span class="cstat-no" title="statement not covered" >	var rounds;</span>
+<span class="cstat-no" title="statement not covered" >	var j;</span>
+<span class="cstat-no" title="statement not covered" >	var cdata = bf_crypt_ciphertext.slice();</span>
+<span class="cstat-no" title="statement not covered" >	var clen = cdata.length;</span>
+<span class="cstat-no" title="statement not covered" >	var one_percent;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	if (log_rounds &lt; 4 || log_rounds &gt; 31)</span>
+<span class="cstat-no" title="statement not covered" >		throw "Bad number of rounds";</span>
+<span class="cstat-no" title="statement not covered" >	if (salt.length != BCRYPT_SALT_LEN)</span>
+<span class="cstat-no" title="statement not covered" >		throw "Bad salt length";</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	rounds = 1 &lt;&lt; log_rounds;</span>
+<span class="cstat-no" title="statement not covered" >	one_percent = Math.floor(rounds / 100) + 1;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	var P = P_orig.slice();</span>
+<span class="cstat-no" title="statement not covered" >	var S = S_orig.slice();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	ekskey(salt, password, P, S);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	var i = 0;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	while(true) {</span>
+<span class="cstat-no" title="statement not covered" >		if(i &lt; rounds){</span>
+<span class="cstat-no" title="statement not covered" >			var start = new Date();</span>
+<span class="cstat-no" title="statement not covered" >			for (; i &lt; rounds;) {</span>
+<span class="cstat-no" title="statement not covered" >				i = i + 1;</span>
+<span class="cstat-no" title="statement not covered" >				key(password, P, S);</span>
+<span class="cstat-no" title="statement not covered" >				key(salt, P, S);</span>
+<span class="cstat-no" title="statement not covered" >		                if(i % one_percent == 0){</span>
+<span class="cstat-no" title="statement not covered" >			        	progress();</span>
                 		}
-<span class="cstat-no" title="statement not covered">		                if((new Date() - start) &gt; MAX_EXECUTION_TIME){</span>
-<span class="cstat-no" title="statement not covered">                    			break;</span>
+<span class="cstat-no" title="statement not covered" >		                if((new Date() - start) &gt; MAX_EXECUTION_TIME){</span>
+<span class="cstat-no" title="statement not covered" >                    			break;</span>
 		                }
             		}
         	} else {
-<span class="cstat-no" title="statement not covered"> 	        	for (i = 0; i &lt; 64; i++) {</span>
-<span class="cstat-no" title="statement not covered">                		for (j = 0; j &lt; (clen &gt;&gt; 1); j++) {</span>
-<span class="cstat-no" title="statement not covered">                    			lr = encipher(cdata, j &lt;&lt; 1, P, S);</span>
+<span class="cstat-no" title="statement not covered" > 	        	for (i = 0; i &lt; 64; i++) {</span>
+<span class="cstat-no" title="statement not covered" >                		for (j = 0; j &lt; (clen &gt;&gt; 1); j++) {</span>
+<span class="cstat-no" title="statement not covered" >                    			lr = encipher(cdata, j &lt;&lt; 1, P, S);</span>
                 		}
             		}
-<span class="cstat-no" title="statement not covered">			var ret = [];</span>
-<span class="cstat-no" title="statement not covered">		        for (i = 0; i &lt; clen; i++) {</span>
-<span class="cstat-no" title="statement not covered">                		ret.push(getByte((cdata[i] &gt;&gt; 24) &amp; 0xff));</span>
-<span class="cstat-no" title="statement not covered">                		ret.push(getByte((cdata[i] &gt;&gt; 16) &amp; 0xff));</span>
-<span class="cstat-no" title="statement not covered">                		ret.push(getByte((cdata[i] &gt;&gt; 8) &amp; 0xff));</span>
-<span class="cstat-no" title="statement not covered">                		ret.push(getByte(cdata[i] &amp; 0xff));</span>
+<span class="cstat-no" title="statement not covered" >			var ret = [];</span>
+<span class="cstat-no" title="statement not covered" >		        for (i = 0; i &lt; clen; i++) {</span>
+<span class="cstat-no" title="statement not covered" >                		ret.push(getByte((cdata[i] &gt;&gt; 24) &amp; 0xff));</span>
+<span class="cstat-no" title="statement not covered" >                		ret.push(getByte((cdata[i] &gt;&gt; 16) &amp; 0xff));</span>
+<span class="cstat-no" title="statement not covered" >                		ret.push(getByte((cdata[i] &gt;&gt; 8) &amp; 0xff));</span>
+<span class="cstat-no" title="statement not covered" >                		ret.push(getByte(cdata[i] &amp; 0xff));</span>
             		}
-<span class="cstat-no" title="statement not covered">            		return(ret);</span>
+<span class="cstat-no" title="statement not covered" >            		return(ret);</span>
         	}
 	}
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function hashpw(password, salt, progress) {</span>
-<span class="cstat-no" title="statement not covered">	var real_salt;</span>
-<span class="cstat-no" title="statement not covered">	var passwordb = [];</span>
-<span class="cstat-no" title="statement not covered">	var saltb = [];</span>
-<span class="cstat-no" title="statement not covered">	var hashed = [];</span>
-<span class="cstat-no" title="statement not covered">	var minor = String.fromCharCode(0);</span>
-<span class="cstat-no" title="statement not covered">	var rounds = 0;</span>
-<span class="cstat-no" title="statement not covered">	var off = 0;</span>
+<span class="fstat-no" title="function not covered" >function hashpw(password, salt, progress) {</span>
+<span class="cstat-no" title="statement not covered" >	var real_salt;</span>
+<span class="cstat-no" title="statement not covered" >	var passwordb = [];</span>
+<span class="cstat-no" title="statement not covered" >	var saltb = [];</span>
+<span class="cstat-no" title="statement not covered" >	var hashed = [];</span>
+<span class="cstat-no" title="statement not covered" >	var minor = String.fromCharCode(0);</span>
+<span class="cstat-no" title="statement not covered" >	var rounds = 0;</span>
+<span class="cstat-no" title="statement not covered" >	var off = 0;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (!progress){</span>
-<span class="cstat-no" title="statement not covered">	        var progress = <span class="fstat-no" title="function not covered">function() {</span>};</span>
+<span class="cstat-no" title="statement not covered" >	if (!progress){</span>
+<span class="cstat-no" title="statement not covered" >	        var progress = <span class="fstat-no" title="function not covered" >function() {</span>};</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (salt.charAt(0) != '$' || salt.charAt(1) != '2')</span>
-<span class="cstat-no" title="statement not covered">		throw "Invalid salt version";</span>
-<span class="cstat-no" title="statement not covered">	if (salt.charAt(2) == '$')</span>
-<span class="cstat-no" title="statement not covered">		off = 3;</span>
+<span class="cstat-no" title="statement not covered" >	if (salt.charAt(0) != '$' || salt.charAt(1) != '2')</span>
+<span class="cstat-no" title="statement not covered" >		throw "Invalid salt version";</span>
+<span class="cstat-no" title="statement not covered" >	if (salt.charAt(2) == '$')</span>
+<span class="cstat-no" title="statement not covered" >		off = 3;</span>
 	else {
-<span class="cstat-no" title="statement not covered">		minor = salt.charAt(2);</span>
-<span class="cstat-no" title="statement not covered">		if (minor != 'a' || salt.charAt(3) != '$')</span>
-<span class="cstat-no" title="statement not covered">			throw "Invalid salt revision";</span>
-<span class="cstat-no" title="statement not covered">		off = 4;</span>
+<span class="cstat-no" title="statement not covered" >		minor = salt.charAt(2);</span>
+<span class="cstat-no" title="statement not covered" >		if (minor != 'a' || salt.charAt(3) != '$')</span>
+<span class="cstat-no" title="statement not covered" >			throw "Invalid salt revision";</span>
+<span class="cstat-no" title="statement not covered" >		off = 4;</span>
 	}
 &nbsp;
 	// Extract number of rounds
-<span class="cstat-no" title="statement not covered">	if (salt.charAt(off + 2) &gt; '$')</span>
-<span class="cstat-no" title="statement not covered">		throw "Missing salt rounds";</span>
-<span class="cstat-no" title="statement not covered">	var r1 = parseInt(salt.substring(off, off + 1)) * 10;</span>
-<span class="cstat-no" title="statement not covered">	var r2 = parseInt(salt.substring(off + 1, off + 2));</span>
-<span class="cstat-no" title="statement not covered">	rounds = r1 + r2;</span>
-<span class="cstat-no" title="statement not covered">	real_salt = salt.substring(off + 3, off + 25);</span>
-<span class="cstat-no" title="statement not covered">	password = password + (minor &gt;= 'a' ? "\000" : "");</span>
+<span class="cstat-no" title="statement not covered" >	if (salt.charAt(off + 2) &gt; '$')</span>
+<span class="cstat-no" title="statement not covered" >		throw "Missing salt rounds";</span>
+<span class="cstat-no" title="statement not covered" >	var r1 = parseInt(salt.substring(off, off + 1)) * 10;</span>
+<span class="cstat-no" title="statement not covered" >	var r2 = parseInt(salt.substring(off + 1, off + 2));</span>
+<span class="cstat-no" title="statement not covered" >	rounds = r1 + r2;</span>
+<span class="cstat-no" title="statement not covered" >	real_salt = salt.substring(off + 3, off + 25);</span>
+<span class="cstat-no" title="statement not covered" >	password = password + (minor &gt;= 'a' ? "\000" : "");</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var buf = new Buffer(password);</span>
-<span class="cstat-no" title="statement not covered">	for (var r = 0; r &lt; buf.length; r++) {</span>
-<span class="cstat-no" title="statement not covered">		passwordb.push(buf[r]);</span>
+<span class="cstat-no" title="statement not covered" >	var buf = new Buffer(password);</span>
+<span class="cstat-no" title="statement not covered" >	for (var r = 0; r &lt; buf.length; r++) {</span>
+<span class="cstat-no" title="statement not covered" >		passwordb.push(buf[r]);</span>
 	}
-<span class="cstat-no" title="statement not covered">	saltb = decode_base64(real_salt, BCRYPT_SALT_LEN);</span>
-<span class="cstat-no" title="statement not covered">	var hashed = crypt_raw(passwordb, saltb, rounds, progress);</span>
+<span class="cstat-no" title="statement not covered" >	saltb = decode_base64(real_salt, BCRYPT_SALT_LEN);</span>
+<span class="cstat-no" title="statement not covered" >	var hashed = crypt_raw(passwordb, saltb, rounds, progress);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var rs = [];</span>
-<span class="cstat-no" title="statement not covered">	rs.push("$2");</span>
-<span class="cstat-no" title="statement not covered">	if (minor &gt;= 'a')</span>
-<span class="cstat-no" title="statement not covered">		rs.push(minor);</span>
-<span class="cstat-no" title="statement not covered">	rs.push("$");</span>
-<span class="cstat-no" title="statement not covered">	if (rounds &lt; 10)</span>
-<span class="cstat-no" title="statement not covered">		rs.push("0");</span>
-<span class="cstat-no" title="statement not covered">	rs.push(rounds.toString());</span>
-<span class="cstat-no" title="statement not covered">	rs.push("$");</span>
-<span class="cstat-no" title="statement not covered">	rs.push(encode_base64(saltb, saltb.length));</span>
-<span class="cstat-no" title="statement not covered">	rs.push(encode_base64(hashed, bf_crypt_ciphertext.length * 4 - 1));</span>
+<span class="cstat-no" title="statement not covered" >	var rs = [];</span>
+<span class="cstat-no" title="statement not covered" >	rs.push("$2");</span>
+<span class="cstat-no" title="statement not covered" >	if (minor &gt;= 'a')</span>
+<span class="cstat-no" title="statement not covered" >		rs.push(minor);</span>
+<span class="cstat-no" title="statement not covered" >	rs.push("$");</span>
+<span class="cstat-no" title="statement not covered" >	if (rounds &lt; 10)</span>
+<span class="cstat-no" title="statement not covered" >		rs.push("0");</span>
+<span class="cstat-no" title="statement not covered" >	rs.push(rounds.toString());</span>
+<span class="cstat-no" title="statement not covered" >	rs.push("$");</span>
+<span class="cstat-no" title="statement not covered" >	rs.push(encode_base64(saltb, saltb.length));</span>
+<span class="cstat-no" title="statement not covered" >	rs.push(encode_base64(hashed, bf_crypt_ciphertext.length * 4 - 1));</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	return(rs.join(''));</span>
+<span class="cstat-no" title="statement not covered" >	return(rs.join(''));</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function gensalt(rounds) {</span>
-<span class="cstat-no" title="statement not covered">	var iteration_count = rounds;</span>
-<span class="cstat-no" title="statement not covered">	if (iteration_count &lt; 4 || iteration_count &gt; 31) {</span>
-<span class="cstat-no" title="statement not covered">		iteration_count = GENSALT_DEFAULT_LOG2_ROUNDS;</span>
+<span class="fstat-no" title="function not covered" >function gensalt(rounds) {</span>
+<span class="cstat-no" title="statement not covered" >	var iteration_count = rounds;</span>
+<span class="cstat-no" title="statement not covered" >	if (iteration_count &lt; 4 || iteration_count &gt; 31) {</span>
+<span class="cstat-no" title="statement not covered" >		iteration_count = GENSALT_DEFAULT_LOG2_ROUNDS;</span>
 	}
-<span class="cstat-no" title="statement not covered">	var output = [];</span>
-<span class="cstat-no" title="statement not covered">	output.push("$2a$");</span>
-<span class="cstat-no" title="statement not covered">	if (iteration_count &lt; 10)</span>
-<span class="cstat-no" title="statement not covered">		output.push("0");</span>
-<span class="cstat-no" title="statement not covered">	output.push(iteration_count.toString());</span>
-<span class="cstat-no" title="statement not covered">	output.push('$');</span>
+<span class="cstat-no" title="statement not covered" >	var output = [];</span>
+<span class="cstat-no" title="statement not covered" >	output.push("$2a$");</span>
+<span class="cstat-no" title="statement not covered" >	if (iteration_count &lt; 10)</span>
+<span class="cstat-no" title="statement not covered" >		output.push("0");</span>
+<span class="cstat-no" title="statement not covered" >	output.push(iteration_count.toString());</span>
+<span class="cstat-no" title="statement not covered" >	output.push('$');</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var rand_buf;</span>
-<span class="cstat-no" title="statement not covered">	try {</span>
-<span class="cstat-no" title="statement not covered">		rand_buf = crypto.randomBytes(BCRYPT_SALT_LEN);</span>
+<span class="cstat-no" title="statement not covered" >	var rand_buf;</span>
+<span class="cstat-no" title="statement not covered" >	try {</span>
+<span class="cstat-no" title="statement not covered" >		rand_buf = crypto.randomBytes(BCRYPT_SALT_LEN);</span>
 	} catch (ex) {
-<span class="cstat-no" title="statement not covered">		throw ex;</span>
+<span class="cstat-no" title="statement not covered" >		throw ex;</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	output.push(encode_base64(rand_buf, BCRYPT_SALT_LEN));</span>
-<span class="cstat-no" title="statement not covered">	return output.join('');</span>
+<span class="cstat-no" title="statement not covered" >	output.push(encode_base64(rand_buf, BCRYPT_SALT_LEN));</span>
+<span class="cstat-no" title="statement not covered" >	return output.join('');</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function genSaltSync(rounds) {</span>
+<span class="fstat-no" title="function not covered" >function genSaltSync(rounds) {</span>
 	/*
 		rounds - [OPTIONAL] - the number of rounds to process the data for. (default - 10)
 		seed_length - [OPTIONAL] - RAND_bytes wants a length. to make that a bit flexible, you can specify a seed_length. (default - 20)
 	*/
-<span class="cstat-no" title="statement not covered">	if(!rounds) {</span>
-<span class="cstat-no" title="statement not covered">		rounds = GENSALT_DEFAULT_LOG2_ROUNDS;</span>
+<span class="cstat-no" title="statement not covered" >	if(!rounds) {</span>
+<span class="cstat-no" title="statement not covered" >		rounds = GENSALT_DEFAULT_LOG2_ROUNDS;</span>
 	}
-<span class="cstat-no" title="statement not covered">	return gensalt(rounds);</span>
+<span class="cstat-no" title="statement not covered" >	return gensalt(rounds);</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function genSalt(rounds, callback) {</span>
+<span class="fstat-no" title="function not covered" >function genSalt(rounds, callback) {</span>
 	/*
 		rounds - [OPTIONAL] - the number of rounds to process the data for. (default - 10)
 		seed_length - [OPTIONAL] - RAND_bytes wants a length. to make that a bit flexible, you can specify a seed_length. (default - 20)
@@ -2212,33 +2214,33 @@ var index_64 = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 			error - First parameter to the callback detailing any errors.
 			salt - Second parameter to the callback providing the generated salt.
 	*/
-<span class="cstat-no" title="statement not covered">	if(!callback) {</span>
-<span class="cstat-no" title="statement not covered">		throw "No callback function was given."</span>
+<span class="cstat-no" title="statement not covered" >	if(!callback) {</span>
+<span class="cstat-no" title="statement not covered" >		throw "No callback function was given."</span>
 	}
-<span class="cstat-no" title="statement not covered">	process.nextTick(<span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">		var result = null;</span>
-<span class="cstat-no" title="statement not covered">		var error = null;</span>
-<span class="cstat-no" title="statement not covered">		try {</span>
-<span class="cstat-no" title="statement not covered">			result = genSaltSync(rounds)</span>
+<span class="cstat-no" title="statement not covered" >	process.nextTick(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >		var result = null;</span>
+<span class="cstat-no" title="statement not covered" >		var error = null;</span>
+<span class="cstat-no" title="statement not covered" >		try {</span>
+<span class="cstat-no" title="statement not covered" >			result = genSaltSync(rounds)</span>
 		} catch(err) {
-<span class="cstat-no" title="statement not covered">			error = err;</span>
+<span class="cstat-no" title="statement not covered" >			error = err;</span>
 		}
-<span class="cstat-no" title="statement not covered">		callback(error, result);</span>
+<span class="cstat-no" title="statement not covered" >		callback(error, result);</span>
 	});
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function hashSync(data, salt, progress) {</span>
+<span class="fstat-no" title="function not covered" >function hashSync(data, salt, progress) {</span>
 	/*
 		data - [REQUIRED] - the data to be encrypted.
 		salt - [REQUIRED] - the salt to be used in encryption.
 	*/
-<span class="cstat-no" title="statement not covered">	if(!salt) {</span>
-<span class="cstat-no" title="statement not covered">		salt = genSaltSync();</span>
+<span class="cstat-no" title="statement not covered" >	if(!salt) {</span>
+<span class="cstat-no" title="statement not covered" >		salt = genSaltSync();</span>
 	}
-<span class="cstat-no" title="statement not covered">	return hashpw(data, salt, progress);</span>
+<span class="cstat-no" title="statement not covered" >	return hashpw(data, salt, progress);</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function hash(data, salt, progress, callback) {</span>
+<span class="fstat-no" title="function not covered" >function hash(data, salt, progress, callback) {</span>
 	/*
 		data - [REQUIRED] - the data to be encrypted.
 		salt - [REQUIRED] - the salt to be used to hash the password. if specified as a number then a salt will be generated and used (see examples).
@@ -2247,57 +2249,57 @@ var index_64 = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 			error - First parameter to the callback detailing any errors.
 			encrypted - Second parameter to the callback providing the encrypted form.
 	*/
-<span class="cstat-no" title="statement not covered">	if(!callback) {</span>
-<span class="cstat-no" title="statement not covered">		throw "No callback function was given."</span>
+<span class="cstat-no" title="statement not covered" >	if(!callback) {</span>
+<span class="cstat-no" title="statement not covered" >		throw "No callback function was given."</span>
 	}
-<span class="cstat-no" title="statement not covered">	process.nextTick(<span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">		var result = null;</span>
-<span class="cstat-no" title="statement not covered">		var error = null;</span>
-<span class="cstat-no" title="statement not covered">		try {</span>
-<span class="cstat-no" title="statement not covered">			result = hashSync(data, salt, progress)</span>
+<span class="cstat-no" title="statement not covered" >	process.nextTick(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >		var result = null;</span>
+<span class="cstat-no" title="statement not covered" >		var error = null;</span>
+<span class="cstat-no" title="statement not covered" >		try {</span>
+<span class="cstat-no" title="statement not covered" >			result = hashSync(data, salt, progress)</span>
 		} catch(err) {
-<span class="cstat-no" title="statement not covered">			error = err;</span>
+<span class="cstat-no" title="statement not covered" >			error = err;</span>
 		}
-<span class="cstat-no" title="statement not covered">		callback(error, result);</span>
+<span class="cstat-no" title="statement not covered" >		callback(error, result);</span>
 	});
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function compareSync(data, encrypted) {</span>
+<span class="fstat-no" title="function not covered" >function compareSync(data, encrypted) {</span>
 	/*
 		data - [REQUIRED] - data to compare.
 		encrypted - [REQUIRED] - data to be compared to.
 	*/
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if(typeof data != "string" ||  typeof encrypted != "string") {</span>
-<span class="cstat-no" title="statement not covered">		throw "Incorrect arguments";</span>
+<span class="cstat-no" title="statement not covered" >	if(typeof data != "string" ||  typeof encrypted != "string") {</span>
+<span class="cstat-no" title="statement not covered" >		throw "Incorrect arguments";</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var encrypted_length = encrypted.length;</span>
+<span class="cstat-no" title="statement not covered" >	var encrypted_length = encrypted.length;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if(encrypted_length != 60) {</span>
-<span class="cstat-no" title="statement not covered">		throw "Not a valid BCrypt hash.";</span>
+<span class="cstat-no" title="statement not covered" >	if(encrypted_length != 60) {</span>
+<span class="cstat-no" title="statement not covered" >		throw "Not a valid BCrypt hash.";</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var same = true;</span>
-<span class="cstat-no" title="statement not covered">	var hash_data = hashSync(data, encrypted.substr(0, encrypted_length-31));</span>
-<span class="cstat-no" title="statement not covered">	var hash_data_length = hash_data.length;</span>
+<span class="cstat-no" title="statement not covered" >	var same = true;</span>
+<span class="cstat-no" title="statement not covered" >	var hash_data = hashSync(data, encrypted.substr(0, encrypted_length-31));</span>
+<span class="cstat-no" title="statement not covered" >	var hash_data_length = hash_data.length;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	same = hash_data_length == encrypted_length;</span>
+<span class="cstat-no" title="statement not covered" >	same = hash_data_length == encrypted_length;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var max_length = (hash_data_length &lt; encrypted_length) ? hash_data_length : encrypted_length;</span>
+<span class="cstat-no" title="statement not covered" >	var max_length = (hash_data_length &lt; encrypted_length) ? hash_data_length : encrypted_length;</span>
 &nbsp;
 	// to prevent timing attacks, should check entire string
 	// don't exit after found to be false
-<span class="cstat-no" title="statement not covered">	for (var i = 0; i &lt; max_length; ++i) {</span>
-<span class="cstat-no" title="statement not covered">		if (hash_data_length &gt;= i &amp;&amp; encrypted_length &gt;= i &amp;&amp; hash_data[i] != encrypted[i]) {</span>
-<span class="cstat-no" title="statement not covered">			same = false;</span>
+<span class="cstat-no" title="statement not covered" >	for (var i = 0; i &lt; max_length; ++i) {</span>
+<span class="cstat-no" title="statement not covered" >		if (hash_data_length &gt;= i &amp;&amp; encrypted_length &gt;= i &amp;&amp; hash_data[i] != encrypted[i]) {</span>
+<span class="cstat-no" title="statement not covered" >			same = false;</span>
 		}
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	return same;</span>
+<span class="cstat-no" title="statement not covered" >	return same;</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function compare(data, encrypted, callback) {</span>
+<span class="fstat-no" title="function not covered" >function compare(data, encrypted, callback) {</span>
 	/*
 		data - [REQUIRED] - data to compare.
 		encrypted - [REQUIRED] - data to be compared to.
@@ -2305,27 +2307,27 @@ var index_64 = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 			error - First parameter to the callback detailing any errors.
 			same - Second parameter to the callback providing whether the data and encrypted forms match [true | false].
 	*/
-<span class="cstat-no" title="statement not covered">	if(!callback) {</span>
-<span class="cstat-no" title="statement not covered">		throw "No callback function was given."</span>
+<span class="cstat-no" title="statement not covered" >	if(!callback) {</span>
+<span class="cstat-no" title="statement not covered" >		throw "No callback function was given."</span>
 	}
-<span class="cstat-no" title="statement not covered">	process.nextTick(<span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">		var result = null;</span>
-<span class="cstat-no" title="statement not covered">		var error = null;</span>
-<span class="cstat-no" title="statement not covered">		try {</span>
-<span class="cstat-no" title="statement not covered">			result = compareSync(data, encrypted)</span>
+<span class="cstat-no" title="statement not covered" >	process.nextTick(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >		var result = null;</span>
+<span class="cstat-no" title="statement not covered" >		var error = null;</span>
+<span class="cstat-no" title="statement not covered" >		try {</span>
+<span class="cstat-no" title="statement not covered" >			result = compareSync(data, encrypted)</span>
 		} catch(err) {
-<span class="cstat-no" title="statement not covered">			error = err;</span>
+<span class="cstat-no" title="statement not covered" >			error = err;</span>
 		}
-<span class="cstat-no" title="statement not covered">		callback(error, result);</span>
+<span class="cstat-no" title="statement not covered" >		callback(error, result);</span>
 	});
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function getRounds(encrypted) {</span>
+<span class="fstat-no" title="function not covered" >function getRounds(encrypted) {</span>
 	//encrypted - [REQUIRED] - hash from which the number of rounds used should be extracted.
-<span class="cstat-no" title="statement not covered">	if(typeof encrypted != "string") {</span>
-<span class="cstat-no" title="statement not covered">		throw "Incorrect arguments";</span>
+<span class="cstat-no" title="statement not covered" >	if(typeof encrypted != "string") {</span>
+<span class="cstat-no" title="statement not covered" >		throw "Incorrect arguments";</span>
 	}
-<span class="cstat-no" title="statement not covered">	return Number(encrypted.split("$")[2]);</span>
+<span class="cstat-no" title="statement not covered" >	return Number(encrypted.split("$")[2]);</span>
 }
 &nbsp;
 exports.genSaltSync = genSaltSync;
@@ -2337,11 +2339,10 @@ exports.compare = compare;
 exports.getRounds = getRounds;
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 08:29:02 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 16:41:24 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>

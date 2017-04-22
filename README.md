@@ -1,4 +1,7 @@
-# test coverage for  [bcrypt-nodejs (v0.0.3)](https://github.com/shaneGirish/bcryptJS#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-bcrypt-nodejs.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-bcrypt-nodejs) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-bcrypt-nodejs.svg)](https://travis-ci.org/npmtest/node-npmtest-bcrypt-nodejs)
+# npmtest-bcrypt-nodejs
+
+#### basic test coverage for  [bcrypt-nodejs (v0.0.3)](https://github.com/shaneGirish/bcryptJS#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-bcrypt-nodejs.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-bcrypt-nodejs) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-bcrypt-nodejs.svg)](https://travis-ci.org/npmtest/node-npmtest-bcrypt-nodejs)
+
 #### A native JS bcrypt library for NodeJS.
 
 [![NPM](https://nodei.co/npm/bcrypt-nodejs.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/bcrypt-nodejs)
@@ -85,7 +88,8 @@
         "type": "git",
         "url": "git+https://github.com/shaneGirish/bcryptJS.git"
     },
-    "version": "0.0.3"
+    "version": "0.0.3",
+    "bin": {}
 }
 ```
 
